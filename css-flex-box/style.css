@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Lexend Deca", serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap;
+  align-content: start; */
+}
+.sedans-card {
+  max-width: 300px;
+  background-color: hsl(31, 77%, 52%);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 28px;
+}
+.card h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.card p {
+  color: white;
+  /* line-height: 24px; */
+  font-weight: 400;
+  opacity: 0.7;
+  line-height: 1.6;
+}
+.card a {
+  color: white;
+  border: 1px solid white;
+  padding: 1em 2em;
+  border-radius: 28px;
+  background-color: transparent;
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+card a:hover {
+  background-color: white;
+  color: gray;
+}
+.suv-card {
+  max-width: 300px;
+  background-color: hsl(184, 100%, 22%);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 28px;
+}
+.luxery-card {
+  max-width: 300px;
+  background-color: hsl(179, 100%, 13%);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 28px;
+}
+@media (max-width: 720px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
