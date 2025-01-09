@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: "Salsa", serif;
+}
+
+.hero-section {
+  background-image: url("images/backdrop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.decore {
+  width: 250px;
+}
+.para-auidio {
+  margin-left: 15rem;
+  margin-top: -11rem;
+}
+.hero-section p {
+  max-width: 460px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+  color: #1e1e1e;
+}
+.audio-bar {
+  max-width: 490px;
+  background-color: #fbd8a4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  border-radius: 45px;
+}
+.musicIcon {
+  width: 30px;
+  height: 30px;
+}
+audio::-webkit-media-controls-panel {
+  background-color: #fbd8a4;
+}
+
+@media (max-width: 840px) {
+  .deepak2,
+  .music-wave {
+    display: none;
+  }
+  .deepak1 {
+    display: block;
+    margin-left: auto;
+    max-width: 228px;
+  }
+  .para-auidio {
+    margin-left: 1rem;
+    margin-top: -1.5rem;
+  }
+  .hero-section p {
+    max-width: 400px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #1e1e1e;
+  }
+
+  .audio-bar {
+    padding-inline: 4px;
+    justify-content: center;
+    margin-left: -10px;
+  }
+
+  .musicIcon {
+    margin-right: -4px;
+  }
+}
